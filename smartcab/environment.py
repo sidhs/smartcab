@@ -211,7 +211,7 @@ class Environment(object):
                 self.success = False
                 if self.verbose: # Debugging
                     print "Environment.step(): Primary agent hit hard time limit ({})! Trial aborted.".format(self.hard_time_limit)
-            elif self.enforce_deadline and agent_deadline <= 0:
+            elif self.enforce_deadline and agent_deadline <= 0: 
                 self.done = True
                 self.success = False
                 if self.verbose: # Debugging
